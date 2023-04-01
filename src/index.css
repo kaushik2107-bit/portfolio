@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800;900&family=Syne:wght@800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+@layer components {
+    .header-gradient-color {
+        background: linear-gradient(90deg, rgba(255,113,57,1) 0%, rgba(214,23,146,0.8463760504201681) 45%, rgba(255,56,170,0.9051995798319328) 65%, rgba(255,72,72,0.9808298319327731) 100%);
+        filter: blur(120px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        rotate: 180deg;
+    }
+    .header-gradient {
+        background: linear-gradient(90deg, rgb(244, 172, 133) 0%, rgba(49, 162, 93, 0.846) 45%, rgba(79, 218, 213, 0.905) 65%, rgba(219, 248, 57, 0.981) 100%);
+        filter: blur(60px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        rotate: 180deg;
+    }
+    .gradient-black {
+        background: linear-gradient(180deg, transparent, #000);
+    }
+    .theme-font {
+        font-family: 'Exo 2', sans-serif;
+    }
+    .bg-shadow:hover {
+        box-shadow: 0 0px 30px #fc9ef3;
+    }
+
+    .back-shadow {
+        box-shadow: 0px 0px 50px #fc9ef3;
+    }
+}
